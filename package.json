@@ -47,6 +47,7 @@
   "devDependencies": {
     "codeclimate-test-reporter": "0.0.4",
     "echint": "^1.2.0",
+    "fs-readfile-promise": "^2.0.0",
     "istanbul": "^0.3.15",
     "mkdirp": "^0.5.1",
     "mocha": "^2.2.5",
