@@ -104,7 +104,7 @@ describe('npm package generator', function () {
           'test/tmp/.jshintrc',
           'test/tmp/.npmignore',
           'test/tmp/.travis.yml',
-          'test/tmp/bin/unnamed',
+          'test/tmp/bin/bin',
           'test/tmp/docs/API.md',
           'test/tmp/docs/INSTALL.md',
           'test/tmp/lib/index.js',
