@@ -1,4 +1,4 @@
-/* global afterEach, describe, it, */
+/* global afterEach, describe, it */
 
 'use strict'
 
@@ -10,7 +10,7 @@ var read = require('fs-readfile-promise')
 var rimraf = require('rimraf')
 var util = require('util')
 
-var should = require('should')
+require('should-promised')
 
 var target = path.join('test', 'tmp')
 
@@ -30,7 +30,7 @@ describe('npm package generator', function () {
       website: 'foo.com'
     }
 
-    generator(options)
+    return generator(options)
       .then(function () {
         return read('test/tmp/package.json')
       })
@@ -43,12 +43,7 @@ describe('npm package generator', function () {
         pkg.author.should.equal(util.format('%s <%s> (%s)', options.author, options.email, options.website))
         pkg.homepage.should.equal(util.format('https://github.com/%s/%s', options.github, options.name))
 
-        done()
-      })
-      .catch(function (err) {
-        console.log(err)
-        should.fail(err)
-        done()
+        return done()
       })
   })
 
@@ -77,12 +72,12 @@ describe('npm package generator', function () {
           // return to cwd
           process.chdir(cwd)
 
-          done()
+          return done()
         })
     })
   })
 
-  it('should return a list of files created', function (done) {
+  it('should return a list of files created', function () {
     var options = {
       author: 'foo',
       description: 'foo bar',
@@ -93,31 +88,25 @@ describe('npm package generator', function () {
       website: 'foo.com'
     }
 
-    generator(options)
-      .then(function (files) {
-        files.should.be.an.Array
-        files.should.eql([
-          'test/tmp/.editorconfig',
-          'test/tmp/.env.example',
-          'test/tmp/.gitattributes',
-          'test/tmp/.gitignore',
-          'test/tmp/.jshintrc',
-          'test/tmp/.npmignore',
-          'test/tmp/.travis.yml',
-          'test/tmp/bin/bin',
-          'test/tmp/docs/API.md',
-          'test/tmp/docs/INSTALL.md',
-          'test/tmp/lib/index.js',
-          'test/tmp/LICENSE',
-          'test/tmp/package.json',
-          'test/tmp/README.md',
-          'test/tmp/server.js',
-          'test/tmp/src/index.js',
-          'test/tmp/test/index.js'
-        ])
-
-        done()
-      })
+    return generator(options).should.eventually.eql([
+      'test/tmp/.editorconfig',
+      'test/tmp/.env.example',
+      'test/tmp/.gitattributes',
+      'test/tmp/.gitignore',
+      'test/tmp/.jshintrc',
+      'test/tmp/.npmignore',
+      'test/tmp/.travis.yml',
+      'test/tmp/LICENSE',
+      'test/tmp/README.md',
+      'test/tmp/bin/bin',
+      'test/tmp/docs/API.md',
+      'test/tmp/docs/INSTALL.md',
+      'test/tmp/lib/index.js',
+      'test/tmp/package.json',
+      'test/tmp/server.js',
+      'test/tmp/src/index.js',
+      'test/tmp/test/index.js'
+    ])
   })
 
   it('should use environment variables', function (done) {
@@ -138,7 +127,7 @@ describe('npm package generator', function () {
       .then(function (pkg) {
         pkg.name.should.equal(process.env.PACKAGE_NAME)
 
-        done()
+        return done()
       })
   })
 
@@ -155,7 +144,7 @@ describe('npm package generator', function () {
       .then(function () {
         fs.existsSync(path.join(target, 'node_modules')).should.be.true
 
-        done()
+        return done()
       })
   })
 })
