@@ -143,7 +143,7 @@ describe('npm package generator', function () {
   })
 
   it('should install dependencies', function (done) {
-    this.timeout(120000)
+    this.timeout(0)
 
     var options = {
       install: true,
