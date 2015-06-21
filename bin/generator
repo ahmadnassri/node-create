@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+'use strict'
+
+var cmd = require('commander')
+var extend = require('xtend')
+var generator = require('..')
+var pkg = require('../package')
+
+cmd
+  .version(pkg.version)
+  .usage('[options] name path')
+  .option('-a, --author', 'Author Name')
+  .option('-d, --description', 'description')
+  .option('-e, --author-email', 'Author Email')
+  .option('-g, --github', 'Github Username')
+  .option('-i, --install', 'Install Dependencies')
+  .option('-q, --quiet', 'hide npm install output', true)
+  .option('-w, --website', 'Author Website')
+  .parse(process.argv)
+
+if (cmd.args.length < 2) {
+  cmd.help()
+}
+
+var options = extend(cmd, {
+  name: cmd.args[0],
+  target: cmd.args[1]
+})
+
+generator(options)
+  .then(function (files) {
+    console.info('done.')
+
+    process.exit(0)
+  })
+
+  .catch(function (err) {
+    console.error(err)
+
+    process.exit(1)
+  })

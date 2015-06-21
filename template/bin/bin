@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+'use strict'
+
+var cmd = require('commander')
+var debug = require('debug')('${name}')
+var pkg = require('../package')
+var ${name} = require('..')
+
+cmd
+  .version(pkg.version)
+  .usage('[options]')
+  .parse(process.argv)
+
+if (!cmd.args.length) {
+  cmd.help()
+}
+
+${name}()
