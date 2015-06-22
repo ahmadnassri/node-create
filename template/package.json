@@ -29,11 +29,6 @@
     "coverage": "istanbul cover --dir coverage _mocha -- -R dot",
     "codeclimate": "codeclimate < coverage/lcov.info"
   },
-  "echint": {
-    "ignore": [
-      "coverage/**"
-    ]
-  },
   "devDependencies": {
     "codeclimate-test-reporter": "*",
     "echint": "*",
