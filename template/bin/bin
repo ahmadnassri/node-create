@@ -3,7 +3,7 @@
 'use strict'
 
 var cmd = require('commander')
-var debug = require('debug')('${name}')
+var debug = require('debug-log')('${name}')
 var pkg = require('../package')
 var ${name} = require('..')
 

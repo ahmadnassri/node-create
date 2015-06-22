@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "commander": "*",
-    "debug": "*",
+    "debug-log": "*",
     "dotenv": "*"
   }
 }

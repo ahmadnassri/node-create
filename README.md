@@ -24,7 +24,7 @@ I follow the below set of rules in all projects, `npm-package-generator` ensures
 - enforce `standard` & `echint` by running on [`pretest`](https://docs.npmjs.com/misc/scripts)
 - always generate code coverage reports by running `istanbul` on [`posttest`](https://docs.npmjs.com/misc/scripts)
 - use [`commander`](https://www.npmjs.com/package/commander) to provide a CLI (Command Line Interface) *when applicable*
-- use [`debug`](https://www.npmjs.com/package/dotenv) to provide helpful debugging messages without the use of `console.log`
+- use [`debug-log`](https://www.npmjs.com/package/debug-log) to provide helpful debugging messages without the use of `console.log`
 - use [`EditorConfig`](http://editorconfig.org/) files *enforced by [`echint`](https://www.npmjs.com/package/echint)*
 - keep your package lean, only include useful files for developers when running `npm install` *(see package.json + .npmignore files)*
 - use the most permissive open source license *(currently ISC)*
