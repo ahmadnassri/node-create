@@ -2,4 +2,5 @@
 .env*
 .jshintrc
 .travis.yml
+coverage
 test
