@@ -130,17 +130,17 @@ generator(options)
 
 #### options
 
-| option        | description                                     | default                           |
-| ------------- | ----------------------------------------------- | --------------------------------- |
-| `author`      | author name                                     | `process.env.AUTHOR_NAME`         |
-| `description` | package description                             | `process.env.PACKAGE_DESCRIPTION` |
-| `email`       | author email                                    | `process.env.AUTHOR_EMAIL`        |
-| `github`      | github account                                  | `process.env.GITHUB_USERNAME`     |
-| `install`     | run `npm install` and update dependencies       | `false`                           |
-| `name`        | package name                                    | `process.env.PACKAGE_NAME`        |
-| `quiet`       | pipe npm output to `process.stdout`             | `false`                           |
-| `target`      | local path where the package files are created  | `process.cwd()`                   |
-| `website`     | author website                                  | `process.env.AUTHOR_WEBSITE`      |
+| option        | description                                     | default                               |
+| ------------- | ----------------------------------------------- | ------------------------------------- |
+| `author`      | author name                                     | `process.env.NPM_AUTHOR_NAME`         |
+| `description` | package description                             | `process.env.NPM_PACKAGE_DESCRIPTION` |
+| `email`       | author email                                    | `process.env.NPM_AUTHOR_EMAIL`        |
+| `github`      | github account                                  | `process.env.NPM_GITHUB_USERNAME`     |
+| `install`     | run `npm install` and update dependencies       | `false`                               |
+| `name`        | package name                                    | `process.env.NPM_PACKAGE_NAME`        |
+| `quiet`       | pipe npm output to `process.stdout`             | `false`                               |
+| `target`      | local path where the package files are created  | `process.cwd()`                       |
+| `website`     | author website                                  | `process.env.NPM_AUTHOR_WEBSITE`      |
 
 ## Support
 

@@ -110,11 +110,11 @@ describe('npm package generator', function () {
   })
 
   it('should use environment variables', function (done) {
-    process.env.AUTHOR_EMAIL = 'foo@bar.com'
-    process.env.AUTHOR_NAME = 'foo'
-    process.env.AUTHOR_WEBSITE = 'foo.com'
-    process.env.GITHUB_USERNAME = 'foo'
-    process.env.PACKAGE_NAME = 'foobar'
+    process.env.NPM_AUTHOR_EMAIL = 'foo@bar.com'
+    process.env.NPM_AUTHOR_NAME = 'foo'
+    process.env.NPM_AUTHOR_WEBSITE = 'foo.com'
+    process.env.NPM_GITHUB_USERNAME = 'foo'
+    process.env.NPM_PACKAGE_NAME = 'foobar'
 
     generator({
       target: target
@@ -125,7 +125,7 @@ describe('npm package generator', function () {
       })
       .then(JSON.parse)
       .then(function (pkg) {
-        pkg.name.should.equal(process.env.PACKAGE_NAME)
+        pkg.name.should.equal(process.env.NPM_PACKAGE_NAME)
 
         return done()
       })
