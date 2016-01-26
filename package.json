@@ -61,7 +61,7 @@
     "dotenv": "^1.2.0",
     "fs-writefile-promise": "^1.0.1",
     "glob-promise": "^1.0.3",
-    "lodash.template": "^3.6.1",
+    "lodash.template": "^4.0.1",
     "mkdirp-promise": "^1.0.2",
     "read-files-promise": "^1.1.0",
     "xtend": "^4.0.0"
