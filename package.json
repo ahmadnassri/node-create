@@ -58,7 +58,7 @@
   "dependencies": {
     "commander": "^2.8.1",
     "debug-log": "^1.0.0",
-    "dotenv": "^1.2.0",
+    "dotenv": "^2.0.0",
     "fs-writefile-promise": "^1.0.1",
     "glob-promise": "^1.0.3",
     "lodash.template": "^3.6.1",
