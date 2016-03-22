@@ -85,7 +85,7 @@
     "fs-writefile-promise": "^1.0.3",
     "glob-promise": "^1.0.6",
     "lodash.template": "^4.2.2",
-    "mkdirp-promise": "^1.0.3",
+    "mkdirp-promise": "^1.0.4",
     "read-files-promise": "^1.1.1",
     "semantic-release-cli": "^1.4.1"
   }
