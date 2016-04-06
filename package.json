@@ -71,7 +71,7 @@
     "echint": "^1.5.3",
     "fs-readfile-promise": "^2.0.1",
     "mkdirp": "^0.5.1",
-    "nyc": "^6.1.1",
+    "nyc": "^6.2.1",
     "rimraf": "^2.5.2",
     "semantic-release": "^4.3.5",
     "standard": "^6.0.8",
