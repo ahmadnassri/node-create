@@ -67,7 +67,7 @@
     "babel-preset-es2015-node5": "^1.2.0",
     "babel-register": "^6.7.2",
     "codeclimate-test-reporter": "0.3.2",
-    "cz-conventional-changelog": "^1.1.5",
+    "cz-conventional-changelog": "^1.1.6",
     "echint": "^1.5.3",
     "fs-readfile-promise": "^2.0.1",
     "mkdirp": "^0.5.1",
