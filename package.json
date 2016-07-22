@@ -72,7 +72,7 @@
     "fs-readfile-promise": "^2.0.1",
     "mkdirp": "^0.5.1",
     "nyc": "^6.4.0",
-    "rimraf": "^2.5.2",
+    "rimraf": "^2.5.4",
     "semantic-release": "^4.3.5",
     "standard": "^7.1.2",
     "tap": "^5.7.0",
