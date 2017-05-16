@@ -31,7 +31,7 @@
   },
   "scripts": {
     "build": "babel -q src -d build",
-    "lint": "snazzy && echint",
+    "lint": "(standard | snazzy) && echint",
     "pretest": "npm run lint",
     "test": "tap test --node-arg=--require --node-arg=babel-register",
     "test-cli": "babel-node src/bin.js",
@@ -56,6 +56,7 @@
     "echint": "^2.1.0",
     "fs-readfile-promise": "^3.0.0",
     "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
     "tap": "^8.0.1"
   },
   "dependencies": {
