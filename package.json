@@ -56,7 +56,7 @@
     "echint": "^2.1.0",
     "fs-readfile-promise": "^3.0.0",
     "snazzy": "^5.0.0",
-    "tap": "^8.0.1"
+    "tap": "^10.3.2"
   },
   "dependencies": {
     "@ahmadnassri/spawn-promise": "^1.1.0",
