@@ -51,7 +51,7 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "1.0.2",
+    "babel-preset-env": "1.4.0",
     "babel-register": "^6.18.0",
     "echint": "^2.1.0",
     "fs-readfile-promise": "^3.0.0",
@@ -60,11 +60,11 @@
   },
   "dependencies": {
     "@ahmadnassri/spawn-promise": "^1.1.0",
-    "dotenv": "^2.0.0",
+    "dotenv": "^4.0.0",
     "fs-writefile-promise": "^2.0.0",
-    "glob-promise": "^2.0.0",
+    "glob-promise": "^3.1.0",
     "lodash.template": "^4.4.0",
     "read-files-promise": "^1.1.1",
-    "yargs": "^6.5.0"
+    "yargs": "^8.0.1"
   }
 }
