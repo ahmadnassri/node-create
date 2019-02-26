@@ -1,6 +1,6 @@
 {
   "private": false,
-  "version": "1.6.0",
+  "version": "1.6.1",
   "name": "@ahmadnassri/create",
   "description": "an opinionated npm package template",
   "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
