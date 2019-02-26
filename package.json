@@ -42,7 +42,7 @@
     "inquirer": "^6.2.0",
     "lodash.kebabcase": "^4.1.1",
     "mkdirp": "^0.5.1",
-    "spdx-license-list": "^4.1.0",
+    "spdx-license-list": "^5.0.0",
     "validate-npm-package-name": "^3.0.0",
     "yargs": "^13.0.0"
   }
