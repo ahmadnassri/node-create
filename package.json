@@ -36,7 +36,7 @@
     "lint": "npx run-p lint:*"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^3.0.0",
     "conjecture": "^0.1.2",
     "fast-glob": "^2.2.3",
     "inquirer": "^7.0.0",
