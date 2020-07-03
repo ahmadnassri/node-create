@@ -44,6 +44,6 @@
     "mkdirp": "^0.5.1",
     "spdx-license-list": "^6.0.0",
     "validate-npm-package-name": "^3.0.0",
-    "yargs": "^13.0.0"
+    "yargs": "^15.4.0"
   }
 }
